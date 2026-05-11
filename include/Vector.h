@@ -30,6 +30,20 @@ public:
     size_t size() const { return size_; }
     size_t capacity() const { return capacity_; }
     bool empty() const { return size_ == 0; }
+
+    void push_back(const T& value) {
+        if (size_ >= capacity_)
+            ReAlloc(capacity_ * 2);
+        data_[size_] = value;
+        size_++;
+    }
+
+    void push_back(T&& value) {
+        if (size_ >= capacity_)
+            ReAlloc(capacity_ * 2);
+        data_[size_] = std::move(value);
+        size_++;
+    }
 };
 
 #endif
