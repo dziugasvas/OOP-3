@@ -88,6 +88,17 @@ Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back(
 | 10000000     | 0.105178        | 0.036033   |
 | 100000000    | 0.969883        | 0.356048   |
 
+### Atminties perskirstymų palyginimas
+
+Testas: konteineris užpildomas 100,000,000 `int` elementų. Perskirstymas įvyksta kai `capacity() == size()`.
+
+| Konteineris | Perskirstymų skaičius |
+|-------------|----------------------|
+| std::vector | 28                   |
+| Vector      | 26                   |
+
+Išvada: Vector pradeda su `capacity = 2`, todėl atlieka 2 perskirstymais mažiau nei `std::vector`.
+
 ## v2.0 rezultatai
 
 Šioje versijoje pridėti Google Test unit testai ir Doxygen dokumentacija (HTML + PDF).
