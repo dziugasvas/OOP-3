@@ -27,7 +27,7 @@ public:
     using iterator = T*;
     using const_iterator = const T*;
 
-    Vector() { ReAlloc(2); }
+    Vector() {}
 
     ~Vector() { delete[] data_; }
 
@@ -75,15 +75,15 @@ public:
     size_t max_size() const { return size_t(-1) / sizeof(T); }
 
     void push_back(const T& value) {
-        if (size_ >= capacity_)
-            ReAlloc(capacity_ * 2);
-        data_[size_++] = value;
+    if (size_ >= capacity_)
+        ReAlloc(capacity_ == 0 ? 1 : capacity_ * 2);
+    data_[size_++] = value;
     }
 
     void push_back(T&& value) {
-        if (size_ >= capacity_)
-            ReAlloc(capacity_ * 2);
-        data_[size_++] = std::move(value);
+    if (size_ >= capacity_)
+        ReAlloc(capacity_ == 0 ? 1 : capacity_ * 2);
+    data_[size_++] = std::move(value);
     }
 
     iterator begin() { return data_; }
