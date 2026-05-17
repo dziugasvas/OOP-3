@@ -12,8 +12,8 @@ Programoje taip pat realizuotos trys studentų skirstymo strategijos, kurių vei
 # Diegimas ir paleidimas
 1. Nusiklonuokite repozitoriją:
 ```
-git clone https://github.com/dziugasvas/OOP-2.git
-cd OOP-2
+git clone https://github.com/dziugasvas/OOP-3.git
+cd OOP-3
 ```
 2. Įsidiekite reikalingus įrankius (jei jų dar neturite):
 
@@ -60,6 +60,20 @@ Pasirinkus atitinkamą meniu punktą, programa pateikia papildomas instrukcijas 
 |--------------------------|------|------------| 
 | Apple M4 (10 branduolių) | 24GB | NVMe 512GB |      
 ------------------------------------------------
+
+## v3.0 rezultatai
+
+### std::vector ir Vector spartos analizė
+
+Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back()`.
+
+| Elementų sk. | std::vector (s) | Vector (s) |
+|--------------|-----------------|------------|
+| 10000        | 0.000330        | 0.000125   |
+| 100000       | 0.002975        | 0.001081   |
+| 1000000      | 0.022968        | 0.006187   |
+| 10000000     | 0.105178        | 0.036033   |
+| 100000000    | 0.969883        | 0.356048   |
 
 ## v2.0 rezultatai
 
