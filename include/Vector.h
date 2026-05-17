@@ -180,6 +180,21 @@ public:
         std::swap(capacity_, other.capacity_);
     }
 
+    template <typename InputIt>
+    iterator insert(const_iterator pos, InputIt first, InputIt last) {
+        size_t idx = pos - data_;
+        size_t count = std::distance(first, last);
+        if (size_ + count > capacity_)
+            ReAlloc((size_ + count) * 2);
+        for (size_t i = size_ + count - 1; i >= idx + count; i--)
+            data_[i] = std::move(data_[i - count]);
+        size_t j = idx;
+        for (auto it = first; it != last; ++it, ++j)
+            data_[j] = *it;
+        size_ += count;
+        return data_ + idx;
+    }
+    
 };
 
 template <typename T>

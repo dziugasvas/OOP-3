@@ -7,6 +7,7 @@
 #include <deque>
 #include <cctype>
 #include "funkcijos.h"
+#include "Vector.h"
 
 using std::vector;
 using std::string;
@@ -18,7 +19,7 @@ const vector<string> vardai = {"Dovydas", "Matas", "Simonas", "Rokas", "Kajus", 
 const vector<string> pavardes = {"Kazlauskas", "Buzelis", "Sabonis", "Tubelis", "Gudelis", "Macijauskas", "Alekna", "Vanagas", "Butkevicius", "Ulanovas", "Sirvydis", "Jasikevicius", "Jakucionis", "Kleiza", "Jonauskas"};
 
 int main() {
-    vector<Studentas> grupe;
+    Vector<Studentas> grupe;
     bool veikia = true;
 
     srand(time(NULL));
@@ -224,7 +225,7 @@ int main() {
                     cin >> ndKiekis;
                 }
 
-                vector<int> dydziai = {1000, 10000, 100000, 1000000, 10000000};
+                std::vector<int> dydziai = {1000, 10000, 100000, 1000000, 10000000};
                 for (int d : dydziai) {
                     string fn = "test_" + std::to_string(d) + ".txt";
                     tyrimas1(fn, d, ndKiekis);
@@ -310,13 +311,13 @@ int main() {
                 }
 
                 if (kont == 'v') {
-                    laikoSkaiciavimas<std::vector<Studentas>>(strategija, kriterijus, budas, "Vector");
+                    laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "Vector");
                 }
                 else if (kont == 'l') {
-                    laikoSkaiciavimas<std::list<Studentas>>(strategija, kriterijus, budas, "List");
+                    laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "List");
                 }
                 else {
-                    laikoSkaiciavimas<std::deque<Studentas>>(strategija, kriterijus, budas, "Deque");
+                    laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "Deque");
                 }
 
 
@@ -346,8 +347,8 @@ int main() {
 
                 rusiavimas(grupe, budas);
 
-                vector<Studentas> vargsiukai;
-                vector<Studentas> kietakai;
+                Vector<Studentas> vargsiukai;
+                Vector<Studentas> kietakai;
 
                 auto split_start = std::chrono::high_resolution_clock::now();
                 padalintiStudentus1(grupe, vargsiukai, kietakai, budas);

@@ -53,7 +53,7 @@ void generuotiFaila(const std::string& failoPavadinimas, int studentuKiekis, int
     cout << "Failas sugeneruotas: " << failoPavadinimas << endl;
 }
 
-void outputas(const vector<Studentas>& grupe, char pasirinkimas) {
+void outputas(const Vector<Studentas>& grupe, char pasirinkimas) {
     cout << std::fixed << std::setprecision(2);
 
     cout << left << setw(15) << "Vardas" << left << setw(20) << "Pavarde";
@@ -74,7 +74,7 @@ void outputas(const vector<Studentas>& grupe, char pasirinkimas) {
     }
 }
 
-void spausdinimas(const vector<Studentas>& grupe, char pasirinkimas) {
+void spausdinimas(const Vector<Studentas>& grupe, char pasirinkimas) {
     ofstream file("rezultatai.txt");
 
     try {
@@ -107,7 +107,7 @@ void spausdinimas(const vector<Studentas>& grupe, char pasirinkimas) {
     cout << "Rezultatai irasyti i faila 'rezultatai.txt'" << endl;
 }
 
-void inputas(vector<Studentas>& grupe) {
+void inputas(Vector<Studentas>& grupe) {
     int ii = 0;
 
     while (true) {
@@ -246,14 +246,14 @@ void tyrimas1(const string& failoPavadinimas, int studentuKiekis, int ndKiekis) 
 void tyrimas2(const string& failoPavadinimas, char budas) {
     cout << "Antro tyrimo duomenu apdorojimas: " << failoPavadinimas << endl;
 
-    vector<Studentas> grupe;
+    Vector<Studentas> grupe;
 
     auto t_start = std::chrono::high_resolution_clock::now();
     nuskaitymas(grupe, failoPavadinimas);
     auto t2 = std::chrono::high_resolution_clock::now();
     cout << "Nuskaitymo laikas: " << std::fixed << std::setprecision(5) << std::chrono::duration<double>(t2 - t_start).count() << " s" << endl;
 
-    vector<Studentas> vargsiukai, kietakai;
+    Vector<Studentas> vargsiukai, kietakai;
 
     auto t3 = std::chrono::high_resolution_clock::now();
     padalintiStudentus1(grupe, vargsiukai, kietakai, budas);

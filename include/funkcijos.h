@@ -1,6 +1,7 @@
 #ifndef FUNKCIJOS_H
 #define FUNKCIJOS_H
 
+#include "Vector.h"
 #include "Zmogus.h"
 #include "Studentas.h"
 #include <vector>
@@ -17,9 +18,9 @@
 #include <chrono>
 
 void generuotiFaila(const std::string& failoPavadinimas, int kiekStudentu, int ndKiekis);
-void outputas(const std::vector<Studentas>& grupe, char pasirinkimas);
-void spausdinimas(const std::vector<Studentas>& grupe, char pasirinkimas);
-void inputas(std::vector<Studentas>& grupe);
+void outputas(const Vector<Studentas>& grupe, char pasirinkimas);
+void spausdinimas(const Vector<Studentas>& grupe, char pasirinkimas);
+void inputas(Vector<Studentas>& grupe);
 double mediana(const std::vector<int>& paz);
 double vidurkis(const std::vector<int>& paz);
 void tyrimas1(const std::string& failoPavadinimas, int studentuKiekis, int ndKiekis);
