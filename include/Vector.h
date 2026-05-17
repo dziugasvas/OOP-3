@@ -2,6 +2,7 @@
 #define VECTOR_H
 #include <stdexcept>
 #include <algorithm>
+#include <iterator>
 
 template <typename T>
 class Vector {
@@ -22,6 +23,10 @@ private:
     }
 
 public:
+
+    using iterator = T*;
+    using const_iterator = const T*;
+
     Vector() { ReAlloc(2); }
 
     ~Vector() { delete[] data_; }
@@ -79,6 +84,28 @@ public:
         if (size_ >= capacity_)
             ReAlloc(capacity_ * 2);
         data_[size_++] = std::move(value);
+    }
+
+    iterator begin() { return data_; }
+    const_iterator begin() const { return data_; }
+    iterator end() { return data_ + size_; }
+    const_iterator end() const { return data_ + size_; }
+
+    void clear() noexcept { size_ = 0; }
+    
+    void resize(size_t newSize) {
+        if (newSize > capacity_)
+            ReAlloc(newSize);
+        if (newSize > size_)
+            for (size_t i = size_; i < newSize; i++)
+                data_[i] = T{};
+        size_ = newSize;
+    }
+
+    void assign(size_t count, const T& value) {
+        clear();
+        for (size_t i = 0; i < count; i++)
+            push_back(value);
     }
 };
 
