@@ -92,7 +92,7 @@ public:
     const_iterator end() const { return data_ + size_; }
 
     void clear() noexcept { size_ = 0; }
-    
+
     void resize(size_t newSize) {
         if (newSize > capacity_)
             ReAlloc(newSize);
@@ -107,6 +107,10 @@ public:
         for (size_t i = 0; i < count; i++)
             push_back(value);
     }
+
+    T& operator[](size_t pos) { return data_[pos]; }
+    const T& operator[](size_t pos) const { return data_[pos]; }
+    
 };
 
 #endif
