@@ -31,5 +31,25 @@ int main() {
                   << std::setw(20) << laikas2 << std::endl;
     }
 
+    std::cout << "\n--- Atminties perskirstymu palyginimas ---" << std::endl;
+
+    int perskirsymai_std = 0;
+    std::vector<int> v3;
+    for (int i = 1; i <= 100000000; ++i) {
+        if (v3.capacity() == v3.size()) perskirsymai_std++;
+        v3.push_back(i);
+    }
+
+    int perskirsymai_vec = 0;
+    Vector<int> v4;
+    for (int i = 1; i <= 100000000; ++i) {
+        if (v4.capacity() == v4.size()) perskirsymai_vec++;
+        v4.push_back(i);
+    }
+
+    std::cout << "std::vector perskirstymai: " << perskirsymai_std << std::endl;
+    std::cout << "Vector perskirstymai: " << perskirsymai_vec << std::endl;
+
+
     return 0;
 }
