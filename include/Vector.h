@@ -179,7 +179,35 @@ public:
         std::swap(size_,     other.size_);
         std::swap(capacity_, other.capacity_);
     }
-    
+
 };
+
+template <typename T>
+bool operator==(const Vector<T>& a, const Vector<T>& b) {
+    if (a.size() != b.size()) return false;
+    for (size_t i = 0; i < a.size(); i++)
+        if (a[i] != b[i]) return false;
+    return true;
+}
+
+template <typename T>
+bool operator!=(const Vector<T>& a, const Vector<T>& b) { return !(a == b); }
+
+template <typename T>
+bool operator<(const Vector<T>& a, const Vector<T>& b) {
+    return std::lexicographical_compare(a.begin(), a.end(), b.begin(), b.end());
+}
+
+template <typename T>
+bool operator>(const Vector<T>& a, const Vector<T>& b) { return b < a; }
+
+template <typename T>
+bool operator<=(const Vector<T>& a, const Vector<T>& b) { return !(b < a); }
+
+template <typename T>
+bool operator>=(const Vector<T>& a, const Vector<T>& b) { return !(a < b); }
+
+template <typename T>
+void swap(Vector<T>& a, Vector<T>& b) noexcept { a.swap(b); }
 
 #endif
