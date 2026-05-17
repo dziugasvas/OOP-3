@@ -63,6 +63,19 @@ Pasirinkus atitinkamą meniu punktą, programa pateikia papildomas instrukcijas 
 
 ## v3.0 rezultatai
 
+### Funkcijos
+
+| Funkcija | Aprašymas |
+|----------|-----------|
+| `push_back(value)` | Prideda elementą į pabaigą |
+| `pop_back()` | Pašalina paskutinį elementą |
+| `resize(n)` | Pakeičia dydį |
+| `reserve(n)` | Rezervuoja atmintį |
+| `shrink_to_fit()` | Sumažina atmintį iki dydžio |
+| `insert(pos, value)` | Įterpia elementą |
+| `erase(pos)` | Pašalina elementą |
+| `at(pos)` | Grąžina elementą su ribų tikrinimu |
+
 ### std::vector ir Vector spartos analizė
 
 Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back()`.
