@@ -130,6 +130,56 @@ public:
 
     T& back() { return data_[size_ - 1]; }
     const T& back() const { return data_[size_ - 1]; }
+
+    void pop_back() {
+        if (size_ > 0)
+            size_--;
+    }
+
+    void shrink_to_fit() {
+        if (capacity_ > size_)
+            ReAlloc(size_ == 0 ? 1 : size_);
+    }
+
+    void reserve(size_t newCapacity) {
+        if (newCapacity > capacity_)
+            ReAlloc(newCapacity);
+    }
+
+    iterator insert(const_iterator pos, const T& value) {
+        size_t idx = pos - data_;
+        if (size_ >= capacity_)
+            ReAlloc(capacity_ * 2);
+        for (size_t i = size_; i > idx; i--)
+            data_[i] = std::move(data_[i - 1]);
+        data_[idx] = value;
+        size_++;
+        return data_ + idx;
+    }
+
+    iterator erase(const_iterator pos) {
+        size_t idx = pos - data_;
+        for (size_t i = idx; i < size_ - 1; i++)
+            data_[i] = std::move(data_[i + 1]);
+        size_--;
+        return data_ + idx;
+    }
+
+    iterator erase(const_iterator first, const_iterator last) {
+        size_t idxF  = first - data_;
+        size_t count = last - first;
+        for (size_t i = idxF; i + count < size_; i++)
+            data_[i] = std::move(data_[i + count]);
+        size_ -= count;
+        return data_ + idxF;
+    }
+
+    void swap(Vector& other) noexcept {
+        std::swap(data_,     other.data_);
+        std::swap(size_,     other.size_);
+        std::swap(capacity_, other.capacity_);
+    }
+    
 };
 
 #endif
