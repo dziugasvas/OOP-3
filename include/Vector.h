@@ -1,6 +1,5 @@
 #ifndef VECTOR_H
 #define VECTOR_H
-
 #include <stdexcept>
 #include <algorithm>
 
@@ -27,22 +26,32 @@ public:
 
     ~Vector() { delete[] data_; }
 
+    Vector& operator=(const Vector& other) {
+        if (this != &other) {
+            delete[] data_;
+            ReAlloc(other.capacity_);
+            size_ = other.size_;
+            for (size_t i = 0; i < size_; i++)
+                data_[i] = other.data_[i];
+        }
+        return *this;
+    }
+
     size_t size() const { return size_; }
     size_t capacity() const { return capacity_; }
     bool empty() const { return size_ == 0; }
+    size_t max_size() const { return size_t(-1) / sizeof(T); }
 
     void push_back(const T& value) {
         if (size_ >= capacity_)
             ReAlloc(capacity_ * 2);
-        data_[size_] = value;
-        size_++;
+        data_[size_++] = value;
     }
 
     void push_back(T&& value) {
         if (size_ >= capacity_)
             ReAlloc(capacity_ * 2);
-        data_[size_] = std::move(value);
-        size_++;
+        data_[size_++] = std::move(value);
     }
 };
 
