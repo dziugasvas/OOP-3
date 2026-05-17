@@ -111,6 +111,25 @@ public:
     T& operator[](size_t pos) { return data_[pos]; }
     const T& operator[](size_t pos) const { return data_[pos]; }
     
+    T* data() { return data_; }
+    const T* data() const { return data_; }
+
+    T& at(size_t pos) {
+        if (pos >= size_)
+            throw std::out_of_range("Vector::at - indeksas uz ribu");
+        return data_[pos];
+    }
+    const T& at(size_t pos) const {
+        if (pos >= size_)
+            throw std::out_of_range("Vector::at - indeksas uz ribu");
+        return data_[pos];
+    }
+
+    T& front() { return data_[0]; }
+    const T& front() const { return data_[0]; }
+
+    T& back() { return data_[size_ - 1]; }
+    const T& back() const { return data_[size_ - 1]; }
 };
 
 #endif
