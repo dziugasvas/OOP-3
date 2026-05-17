@@ -314,10 +314,10 @@ int main() {
                     laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "Vector");
                 }
                 else if (kont == 'l') {
-                    laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "List");
+                    laikoSkaiciavimas<std::list<Studentas>>(strategija, kriterijus, budas, "List");
                 }
                 else {
-                    laikoSkaiciavimas<Vector<Studentas>>(strategija, kriterijus, budas, "Deque");
+                    laikoSkaiciavimas<std::deque<Studentas>>(strategija, kriterijus, budas, "Deque");
                 }
 
 
@@ -388,4 +388,3 @@ int main() {
 
     return 0;
 }
-

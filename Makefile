@@ -1,18 +1,20 @@
+.PHONY: all create run gtest speedtest clean
+
 all: create
 
 create:
 	g++ -std=c++17 -Iinclude src/main.cpp src/funkcijos.cpp -o programa
 
 O1:
-	g++ -std=c++17 -O1 src/main.cpp src/funkcijos.cpp -o programa
+	g++ -std=c++17 -O1 -Iinclude src/main.cpp src/funkcijos.cpp -o programa
 	./programa
 
 O2:
-	g++ -std=c++17 -O2 src/main.cpp src/funkcijos.cpp -o programa
+	g++ -std=c++17 -O2 -Iinclude src/main.cpp src/funkcijos.cpp -o programa
 	./programa
 
 O3:
-	g++ -std=c++17 -O3 src/main.cpp src/funkcijos.cpp -o programa
+	g++ -std=c++17 -O3 -Iinclude src/main.cpp src/funkcijos.cpp -o programa
 	./programa
 
 run: create
@@ -30,4 +32,4 @@ speedtest:
 	g++ -std=c++17 -Iinclude tests/VectorSpeedTest.cpp -o speedtest && ./speedtest
 
 clean:
-	rm -f programa testai
+	rm -f programa testai speedtest

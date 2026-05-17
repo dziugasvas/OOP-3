@@ -60,11 +60,13 @@ public:
 
     Vector& operator=(const Vector& other) {
         if (this != &other) {
+            T* newBlock = other.capacity_ == 0 ? nullptr : new T[other.capacity_];
+            for (size_t i = 0; i < other.size_; i++)
+                newBlock[i] = other.data_[i];
             delete[] data_;
-            ReAlloc(other.capacity_);
+            data_ = newBlock;
+            capacity_ = other.capacity_;
             size_ = other.size_;
-            for (size_t i = 0; i < size_; i++)
-                data_[i] = other.data_[i];
         }
         return *this;
     }
@@ -138,7 +140,7 @@ public:
 
     void shrink_to_fit() {
         if (capacity_ > size_)
-            ReAlloc(size_ == 0 ? 1 : size_);
+            ReAlloc(size_);
     }
 
     void reserve(size_t newCapacity) {
@@ -147,9 +149,9 @@ public:
     }
 
     iterator insert(const_iterator pos, const T& value) {
-        size_t idx = pos - data_;
+        size_t idx = data_ == nullptr ? 0 : pos - data_;
         if (size_ >= capacity_)
-            ReAlloc(capacity_ * 2);
+            ReAlloc(capacity_ == 0 ? 1 : capacity_ * 2);
         for (size_t i = size_; i > idx; i--)
             data_[i] = std::move(data_[i - 1]);
         data_[idx] = value;
@@ -182,8 +184,10 @@ public:
 
     template <typename InputIt>
     iterator insert(const_iterator pos, InputIt first, InputIt last) {
-        size_t idx = pos - data_;
+        size_t idx = data_ == nullptr ? 0 : pos - data_;
         size_t count = std::distance(first, last);
+        if (count == 0)
+            return data_ + idx;
         if (size_ + count > capacity_)
             ReAlloc((size_ + count) * 2);
         for (size_t i = size_ + count - 1; i >= idx + count; i--)

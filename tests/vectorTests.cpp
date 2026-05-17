@@ -51,6 +51,20 @@ TEST(VectorTest, CopyConstructor) {
     EXPECT_EQ(v2[0], 1);
 }
 
+TEST(VectorTest, CopyAssignment) {
+    Vector<int> v1;
+    v1.push_back(1);
+    v1.push_back(2);
+
+    Vector<int> v2;
+    v2.push_back(9);
+    v2 = v1;
+
+    EXPECT_EQ(v2.size(), 2);
+    EXPECT_EQ(v2[0], 1);
+    EXPECT_EQ(v2[1], 2);
+}
+
 TEST(VectorTest, MoveConstructor) {
     Vector<int> v1;
     v1.push_back(5);
