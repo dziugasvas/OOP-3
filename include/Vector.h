@@ -26,6 +26,33 @@ public:
 
     ~Vector() { delete[] data_; }
 
+    Vector(const Vector& other) {
+        ReAlloc(other.capacity_);
+        size_ = other.size_;
+        for (size_t i = 0; i < size_; i++)
+            data_[i] = other.data_[i];
+    }
+
+    Vector(Vector&& other) noexcept
+        : data_(other.data_), size_(other.size_), capacity_(other.capacity_) {
+        other.data_ = nullptr;
+        other.size_ = 0;
+        other.capacity_ = 0;
+    }
+
+    Vector& operator=(Vector&& other) noexcept {
+        if (this != &other) {
+            delete[] data_;
+            data_ = other.data_;
+            size_ = other.size_;
+            capacity_ = other.capacity_;
+            other.data_ = nullptr;
+            other.size_ = 0;
+            other.capacity_ = 0;
+        }
+        return *this;
+    }
+
     Vector& operator=(const Vector& other) {
         if (this != &other) {
             delete[] data_;
