@@ -25,6 +25,9 @@ gtest:
 		src/funkcijos.cpp tests/testas.cpp tests/vectorTests.cpp \
 		-lgtest -lgtest_main -lpthread \
 		-o testai && ./testai
+		
+speedtest:
+	g++ -std=c++17 -Iinclude tests/VectorSpeedTest.cpp -o speedtest && ./speedtest
 
 clean:
 	rm -f programa testai
