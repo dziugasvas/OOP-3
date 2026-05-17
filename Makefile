@@ -22,7 +22,7 @@ gtest:
 	g++ -std=c++17 -Iinclude \
 		-I/opt/homebrew/include \
 		-L/opt/homebrew/lib \
-		src/funkcijos.cpp tests/testas.cpp \
+		src/funkcijos.cpp tests/testas.cpp tests/vectorTests.cpp \
 		-lgtest -lgtest_main -lpthread \
 		-o testai && ./testai
 

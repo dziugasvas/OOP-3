@@ -25,6 +25,7 @@ double mediana(const std::vector<int>& paz);
 double vidurkis(const std::vector<int>& paz);
 void tyrimas1(const std::string& failoPavadinimas, int studentuKiekis, int ndKiekis);
 void tyrimas2(const std::string& failoPavadinimas, char budas);
+void vektoriunSpartosTestas();
 
 template <typename konteineris>
 void nuskaitymas(konteineris& grupe, std::string failas) {
