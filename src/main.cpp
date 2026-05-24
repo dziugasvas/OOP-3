@@ -156,9 +156,16 @@ int main() {
 
             case 4: {
                 string failas;
+                cout << "Turimi failai: " << endl;
+                
+                #ifdef _WIN32
+                     system("dir /b *.txt");
+                #else
+                     system("ls *.txt");
+                #endif
+
                 cout << "Iveskite failo pavadinima: ";
-                cout << "Turimi failai: ";
-                system("ls *.txt");
+
                 cin >> failas;
 
                 try {

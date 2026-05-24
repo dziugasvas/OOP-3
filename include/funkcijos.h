@@ -33,7 +33,7 @@ void nuskaitymas(konteineris& grupe, std::string failas) {
 
     try {
         if (!input.is_open()) {
-            throw std::runtime_error("Nepavyko atidaryti failo: " + failas);
+            throw std::runtime_error("Nepavyko  failo: " + failas);
         }
     } catch (std::exception& e) {
         std::cout << "Klaida: " << e.what() << std::endl;
