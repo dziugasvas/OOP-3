@@ -97,7 +97,21 @@ Testas: konteineris užpildomas 100,000,000 `int` elementų. Perskirstymas įvyk
 | std::vector | 28                   |
 | Vector      | 26                   |
 
-Išvada: Vector pradeda su `capacity = 2`, todėl atlieka 2 perskirstymais mažiau nei `std::vector`.
+Išvada: Vector atlieka 26 perskirstymus, std::vector — 28, nes Vector konstruktorius pradeda su `capacity = 2`.
+
+### Vector klasės naudojimas programoje vietoj std::vector
+
+Testas: programa paleista su skirtingais studentų kiekiais, naudojant 3 strategiją ir rikiuojant pagal galutinį vidurkį.
+
+| Studentų sk. | std::vector | Vector    |
+|--------------|-------------|-----------|
+| 1000         | 0.0152606   | 0.0152272 |
+| 10000        | 0.0625238   | 0.059997  |
+| 100000       | 0.701592    | 0.681111  |
+| 1000000      | 4.30505     | 4.10964   |
+| 10000000     | 21.0267     | 19.8456   |
+
+Išvada: Vector realizacija veikia greičiau nei std::vector dėl optimizuoto atminties valdymo.
 
 ## v2.0 rezultatai
 
