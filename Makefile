@@ -29,7 +29,7 @@ gtest:
 		-o testai && ./testai
 		
 speedtest:
-	g++ -std=c++17 -Iinclude tests/VectorSpeedTest.cpp -o speedtest && ./speedtest
+	g++ -std=c++17 -Iinclude tests/vectorTestsectorSpeedTest.cpp -o speedtest && ./speedtest
 
 clean:
 	rm -f programa testai speedtest

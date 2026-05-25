@@ -76,6 +76,20 @@ Pasirinkus atitinkamą meniu punktą, programa pateikia papildomas instrukcijas 
 | `erase(pos)` | Pašalina elementą |
 | `at(pos)` | Grąžina elementą su ribų tikrinimu |
 
+### Vector funkcijų pavyzdžiai
+
+Žemiau pateikti keli `Vector` funkcijų naudojimo pavyzdžiai. Analogiškai naudojant `std::vector` gaunami tokie patys rezultatai.
+
+| Funkcija | Pavyzdys | Rezultatas |
+|----------|----------|------------|
+| `push_back()` | `Vector<int> v; v.push_back(1); v.push_back(2);` | `v.size() == 2`, `v[0] == 1`, `v[1] == 2` |
+| `pop_back()` | `Vector<int> v; v.push_back(1); v.push_back(2); v.pop_back();` | `v.size() == 1`, `v.back() == 1` |
+| `resize()` | `Vector<int> v; v.resize(5);` | `v.size() == 5` |
+| `reserve()` | `Vector<int> v; v.reserve(100);` | `v.capacity() >= 100`, `v.size() == 0` |
+| `insert()` | `Vector<int> v; v.push_back(1); v.push_back(3); v.insert(v.begin() + 1, 2);` | `v[0] == 1`, `v[1] == 2`, `v[2] == 3` |
+| `erase()` | `Vector<int> v; v.push_back(1); v.push_back(2); v.push_back(3); v.erase(v.begin());` | `v.size() == 2`, `v[0] == 2` |
+| `at()` | `Vector<int> v; v.push_back(10); v.at(0);` | `v.at(0) == 10`, o kreipiantis už ribų metama `std::out_of_range` klaida |
+
 ### std::vector ir Vector spartos analizė
 
 Testas: tuščias konteineris užpildomas `int` elementais naudojant `push_back()`.
@@ -95,9 +109,9 @@ Testas: konteineris užpildomas 100,000,000 `int` elementų. Perskirstymas įvyk
 | Konteineris | Perskirstymų skaičius |
 |-------------|----------------------|
 | std::vector | 28                   |
-| Vector      | 26                   |
+| Vector      | 28                   |
 
-Išvada: Vector atlieka 26 perskirstymus, std::vector — 28, nes Vector konstruktorius pradeda su `capacity = 2`.
+Išvada: Abu konteineriai atlieka vienodą kiekį perskirstymų (28).
 
 ### Vector klasės naudojimas programoje vietoj std::vector
 
