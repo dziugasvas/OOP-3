@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['generuotifaila_0',['generuotiFaila',['../funkcijos_8h.html#aa8e99f2199807b05d83e4080f6481a26',1,'generuotiFaila(const std::string &amp;failoPavadinimas, int kiekStudentu, int ndKiekis):&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#ab1b13ddc0291b436a668c05b7ada87f2',1,'generuotiFaila(const std::string &amp;failoPavadinimas, int studentuKiekis, int ndKiekis):&#160;funkcijos.cpp']]],
-  ['getegz_1',['getEgz',['../class_studentas.html#a2f9dcb2fef2e6b3dbc1581779a90a68a',1,'Studentas']]],
-  ['getgalutinismed_2',['getGalutinisMed',['../class_studentas.html#a77eed5a443b0e55e85ee4e895a78e71c',1,'Studentas']]],
-  ['getgalutinisvid_3',['getGalutinisVid',['../class_studentas.html#a50fb3dcf0be0e97934f41641b85ef9e5',1,'Studentas']]],
-  ['getpavarde_4',['getPavarde',['../class_studentas.html#ae9c8d8f8892d54d529fca28a4ad8268d',1,'Studentas::getPavarde()'],['../class_zmogus.html#a5ccca765659860fec609deb2f2269ab9',1,'Zmogus::getPavarde()']]],
-  ['getpaz_5',['getPaz',['../class_studentas.html#af6d51bf9a3db3e7d4ae4c160792c4b93',1,'Studentas']]],
-  ['getrez_6',['getRez',['../class_studentas.html#a96a5c56d0b94ab196e7f1e30275e9737',1,'Studentas']]],
-  ['getvardas_7',['getVardas',['../class_studentas.html#a3ca6431a4e395c8cea0e47e71a064373',1,'Studentas::getVardas()'],['../class_zmogus.html#aa2dd74627cfa0ca541c107333a30ce5b',1,'Zmogus::getVardas()']]]
+  ['assign_0',['assign',['../class_vector.html#ae8dfa135fec20c87550383b3ae20dff0',1,'Vector']]],
+  ['at_1',['at',['../class_vector.html#a7ec5a5764d1a5741a13e05d596e18e39',1,'Vector::at(size_t pos)'],['../class_vector.html#aac23fce7dbe03e3c9d6d2c810d7757d0',1,'Vector::at(size_t pos) const']]]
 ];

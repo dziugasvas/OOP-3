@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['vardai_0',['vardai',['../main_8cpp.html#aef9f9c749c51311b7aab4ce5c7f54c2e',1,'main.cpp']]],
-  ['vardas_1',['vardas',['../class_zmogus.html#a4d456bf4fea70f08e0b26517576cfbc0',1,'Zmogus']]]
+  ['pavarde_0',['pavarde',['../class_zmogus.html#a99cc96defe5d014db052cc754e989b16',1,'Zmogus']]],
+  ['pavardes_1',['pavardes',['../main_8cpp.html#aef6ad09a0021b2b8f62acd4138ca8305',1,'main.cpp']]],
+  ['paz_2',['paz',['../class_studentas.html#a283b3258f2240f11eca788eda557a20e',1,'Studentas']]]
 ];

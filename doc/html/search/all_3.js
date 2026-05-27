@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['inputas_0',['inputas',['../funkcijos_8h.html#a4d43358a267d9ecc6a834c3e11ebb0f1',1,'inputas(std::vector&lt; Studentas &gt; &amp;grupe):&#160;funkcijos.h'],['../funkcijos_8cpp.html#a48aa126d7143c8a4b2649d498199c3c7',1,'inputas(vector&lt; Studentas &gt; &amp;grupe):&#160;funkcijos.cpp']]],
-  ['isvalytipaz_1',['isvalytiPaz',['../class_studentas.html#a715e9ca73be4fca6fce2b0e0b29e7192',1,'Studentas']]]
+  ['data_0',['data',['../class_vector.html#a641a765cb13d9e9ff8f9bc4e5a375c9b',1,'Vector::data()'],['../class_vector.html#adf2019fbfec16aeea3150a48e0c773ee',1,'Vector::data() const']]],
+  ['data_5f_1',['data_',['../class_vector.html#a09e20256bbab28c03e09e742ff3e5844',1,'Vector']]]
 ];

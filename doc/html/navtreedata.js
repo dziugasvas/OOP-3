@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "OOP v2.0 - Studentu Sistema", "index.html", [
+  [ "OOP v3.0 - Studentu Sistema", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -33,6 +33,7 @@ var NAVTREE =
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],

@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['padalintistudentus1_0',['padalintiStudentus1',['../funkcijos_8h.html#a4e9e2774ce9d14953a0806b26a5cb28e',1,'funkcijos.h']]],
-  ['padalintistudentus2_1',['padalintiStudentus2',['../funkcijos_8h.html#abfd16d7ee0527411426ff1f0bfa4dfc1',1,'funkcijos.h']]],
-  ['padalintistudentus3_2',['padalintiStudentus3',['../funkcijos_8h.html#a803c6a13360ca638790813173bac0142',1,'funkcijos.h']]],
-  ['pridetipaz_3',['pridetiPaz',['../class_studentas.html#a35de1db3325d3396dfb1e1524c5cecdb',1,'Studentas']]],
-  ['print_4',['print',['../class_studentas.html#a3d73d57245cccb84a87fff820a32f205',1,'Studentas::print()'],['../class_zmogus.html#a54c34a84f8fee7c318a3c69072521b5f',1,'Zmogus::print()']]]
+  ['generuotifaila_0',['generuotiFaila',['../funkcijos_8h.html#aa8e99f2199807b05d83e4080f6481a26',1,'generuotiFaila(const std::string &amp;failoPavadinimas, int kiekStudentu, int ndKiekis):&#160;funkcijos.cpp'],['../funkcijos_8cpp.html#ab1b13ddc0291b436a668c05b7ada87f2',1,'generuotiFaila(const std::string &amp;failoPavadinimas, int studentuKiekis, int ndKiekis):&#160;funkcijos.cpp']]],
+  ['getegz_1',['getEgz',['../class_studentas.html#a2f9dcb2fef2e6b3dbc1581779a90a68a',1,'Studentas']]],
+  ['getgalutinismed_2',['getGalutinisMed',['../class_studentas.html#a77eed5a443b0e55e85ee4e895a78e71c',1,'Studentas']]],
+  ['getgalutinisvid_3',['getGalutinisVid',['../class_studentas.html#a50fb3dcf0be0e97934f41641b85ef9e5',1,'Studentas']]],
+  ['getpavarde_4',['getPavarde',['../class_studentas.html#ae9c8d8f8892d54d529fca28a4ad8268d',1,'Studentas::getPavarde()'],['../class_zmogus.html#a5ccca765659860fec609deb2f2269ab9',1,'Zmogus::getPavarde()']]],
+  ['getpaz_5',['getPaz',['../class_studentas.html#af6d51bf9a3db3e7d4ae4c160792c4b93',1,'Studentas']]],
+  ['getrez_6',['getRez',['../class_studentas.html#a96a5c56d0b94ab196e7f1e30275e9737',1,'Studentas']]],
+  ['getvardas_7',['getVardas',['../class_studentas.html#a3ca6431a4e395c8cea0e47e71a064373',1,'Studentas::getVardas()'],['../class_zmogus.html#aa2dd74627cfa0ca541c107333a30ce5b',1,'Zmogus::getVardas()']]]
 ];
