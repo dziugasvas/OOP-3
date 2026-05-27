@@ -184,14 +184,14 @@ void inputas(Vector<Studentas>& grupe) {
     }
 }
 
-double mediana(const vector<int>& paz) {
+double mediana(const Vector<int>& paz) {
     int n = paz.size();
 
     if (n == 0) {
         return 0.0;
     }
 
-    vector<int> temp = paz;
+    Vector<int> temp = paz;
     sort(temp.begin(), temp.end());
 
     if (n % 2 != 0) {
@@ -201,7 +201,7 @@ double mediana(const vector<int>& paz) {
     }
 }
 
-double vidurkis(const vector<int>& paz) {
+double vidurkis(const Vector<int>& paz) {
     if (paz.empty()) {
         return 0.0;
     }

@@ -13,18 +13,30 @@ int main() {
               << std::setw(20) << "Vector (s)" << std::endl;
     std::cout << std::string(55, '-') << std::endl;
 
+    volatile long long kontrolinis = 0;
+
     for (int sz : dydziai) {
         auto t1 = std::chrono::high_resolution_clock::now();
         std::vector<int> v1;
         for (int i = 1; i <= sz; ++i) v1.push_back(i);
+        long long suma1 = 0;
+        for (int x : v1) suma1 += x;
+        kontrolinis += suma1;
         auto t2 = std::chrono::high_resolution_clock::now();
         double laikas1 = std::chrono::duration<double>(t2 - t1).count();
 
         auto t3 = std::chrono::high_resolution_clock::now();
         Vector<int> v2;
         for (int i = 1; i <= sz; ++i) v2.push_back(i);
+        long long suma2 = 0;
+        for (int x : v2) suma2 += x;
+        kontrolinis += suma2;
         auto t4 = std::chrono::high_resolution_clock::now();
         double laikas2 = std::chrono::duration<double>(t4 - t3).count();
+
+        if (suma1 != suma2) {
+            std::cout << "Klaida: konteineriu sumos nesutampa!" << std::endl;
+        }
 
         std::cout << std::left << std::setw(15) << sz
                   << std::setw(20) << std::fixed << std::setprecision(6) << laikas1
@@ -49,6 +61,7 @@ int main() {
 
     std::cout << "std::vector perskirstymai: " << perskirsymai_std << std::endl;
     std::cout << "Vector perskirstymai: " << perskirsymai_vec << std::endl;
+    std::cout << "Kontroline suma: " << kontrolinis << std::endl;
 
 
     return 0;

@@ -21,8 +21,8 @@ void generuotiFaila(const std::string& failoPavadinimas, int kiekStudentu, int n
 void outputas(const Vector<Studentas>& grupe, char pasirinkimas);
 void spausdinimas(const Vector<Studentas>& grupe, char pasirinkimas);
 void inputas(Vector<Studentas>& grupe);
-double mediana(const std::vector<int>& paz);
-double vidurkis(const std::vector<int>& paz);
+double mediana(const Vector<int>& paz);
+double vidurkis(const Vector<int>& paz);
 void tyrimas1(const std::string& failoPavadinimas, int studentuKiekis, int ndKiekis);
 void tyrimas2(const std::string& failoPavadinimas, char budas);
 void vektoriunSpartosTestas();
@@ -63,7 +63,7 @@ void nuskaitymas(konteineris& grupe, std::string failas) {
             continue;
         }
 
-        std::vector<int> paz;
+        Vector<int> paz;
         int x;
 
         while (ss >> x) {

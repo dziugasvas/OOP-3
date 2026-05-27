@@ -1,6 +1,7 @@
 #ifndef STUDENTAS_H
 #define STUDENTAS_H
 
+#include "Vector.h"
 #include "Zmogus.h"
 #include <iostream>
 #include <string>
@@ -22,11 +23,11 @@
 
 class Studentas : public Zmogus {
 private:
-    std::vector<int> paz;  ///< Namu darbu pazymiai
-    int egz;               ///< Egzamino pazymys
-    double rez;            ///< Rezultatas
-    double galutinisVid;   ///< Galutinis pagal vidurkis
-    double galutinisMed;   ///< Galutinis pagal mediana
+    Vector<int> paz;  
+    int egz;              
+    double rez;            
+    double galutinisVid;  
+    double galutinisMed;   
 
 public:
     /// @brief Numatytasis konstruktorius
@@ -121,7 +122,7 @@ public:
         std::getline(in, eilute);
         std::stringstream ss(eilute);
         ss >> vardas >> pavarde;
-        std::vector<int> visi;
+        Vector<int> visi;
         int skaicius;
         while (ss >> skaicius) visi.push_back(skaicius);
         if (!visi.empty()) {
@@ -132,7 +133,7 @@ public:
     }
 
     /// @brief Grazina pazymiu vektoriu
-    const std::vector<int>& getPaz() const { return paz; }
+    const Vector<int>& getPaz() const { return paz; }
 
     /// @brief Grazina egzamino pazymi
     int getEgz() const { return egz; }
@@ -147,7 +148,7 @@ public:
     double getGalutinisMed() const { return galutinisMed; }
 
     /// @brief Nustato pazymius
-    void setPaz(const std::vector<int>& naujiPaz) { paz = naujiPaz; }
+    void setPaz(const Vector<int>& naujiPaz) { paz = naujiPaz; }
 
     /// @brief Nustato egzamino pazymi
     void setEgz(int naujasEgz) { egz = naujasEgz; }
