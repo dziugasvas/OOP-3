@@ -2,7 +2,6 @@
 #include "Studentas.h"
 #include "funkcijos.h"
 #include <sstream>
-#include <vector>
 
 TEST(StudentasTest, DefaultConstructor) {
     Studentas s;
@@ -113,21 +112,21 @@ TEST(ZmogusTest, ZmogusAbstrakcija) {
 }
 
 TEST(FunkcijosTest, Vidurkis) {
-    std::vector<int> grades = {4, 6, 8, 10};
+    Vector<int> grades = {4, 6, 8, 10};
     EXPECT_DOUBLE_EQ(vidurkis(grades), 7.0);
 
-    std::vector<int> empty = {};
+    Vector<int> empty = {};
     EXPECT_DOUBLE_EQ(vidurkis(empty), 0.0);
 }
 
 TEST(FunkcijosTest, Mediana) {
-    std::vector<int> odd = {1, 3, 5};
+    Vector<int> odd = {1, 3, 5};
     EXPECT_DOUBLE_EQ(mediana(odd), 3.0);
 
-    std::vector<int> even = {1, 2, 3, 4};
+    Vector<int> even = {1, 2, 3, 4};
     EXPECT_DOUBLE_EQ(mediana(even), 2.5);
 
-    std::vector<int> empty = {};
+    Vector<int> empty = {};
     EXPECT_DOUBLE_EQ(mediana(empty), 0.0);
 }
 

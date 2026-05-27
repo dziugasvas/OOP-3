@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include <algorithm>
 #include <iterator>
+#include <initializer_list>
 
 template <typename T>
 class Vector {
@@ -28,6 +29,12 @@ public:
     using const_iterator = const T*;
 
     Vector() {}
+
+    Vector(std::initializer_list<T> init) {
+        reserve(init.size());
+        for (const auto& value : init)
+            push_back(value);
+    }
 
     ~Vector() { delete[] data_; }
 
