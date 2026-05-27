@@ -3,7 +3,7 @@ var funkcijos_8h =
     [ "generuotiFaila", "funkcijos_8h.html#aa8e99f2199807b05d83e4080f6481a26", null ],
     [ "inputas", "funkcijos_8h.html#ab6d6c55152556ad6a8519e19389e25bc", null ],
     [ "laikoSkaiciavimas", "funkcijos_8h.html#ad8fc3ca3fddd825c88237daa491ca20c", null ],
-    [ "mediana", "funkcijos_8h.html#a327175b1cc7a837eada360c5ffa5ee7a", null ],
+    [ "mediana", "funkcijos_8h.html#afbfa18e5d609c677acb1b3c1b06eac3e", null ],
     [ "nuskaitymas", "funkcijos_8h.html#ad0c3768b8d7ea289a8f1be081d80618c", null ],
     [ "outputas", "funkcijos_8h.html#a25c9f042714afdeba74ac1ad0c475bd9", null ],
     [ "padalintiStudentus1", "funkcijos_8h.html#a4e9e2774ce9d14953a0806b26a5cb28e", null ],
@@ -15,5 +15,5 @@ var funkcijos_8h =
     [ "tyrimas1", "funkcijos_8h.html#a203c149c03db69bd1144d2ecf8e0b2bd", null ],
     [ "tyrimas2", "funkcijos_8h.html#a51aa096f32d6f0ceb649eef685335c65", null ],
     [ "vektoriunSpartosTestas", "funkcijos_8h.html#a215d0170fea4af9ed9106459546e3e1a", null ],
-    [ "vidurkis", "funkcijos_8h.html#a15b32de95e91af916262770c4a6aa345", null ]
+    [ "vidurkis", "funkcijos_8h.html#ab4f8f33b7ca122666d5f6ddbd7eb6599", null ]
 ];

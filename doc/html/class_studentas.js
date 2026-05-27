@@ -8,7 +8,7 @@ var class_studentas =
     [ "getGalutinisMed", "class_studentas.html#a77eed5a443b0e55e85ee4e895a78e71c", null ],
     [ "getGalutinisVid", "class_studentas.html#a50fb3dcf0be0e97934f41641b85ef9e5", null ],
     [ "getPavarde", "class_studentas.html#ae9c8d8f8892d54d529fca28a4ad8268d", null ],
-    [ "getPaz", "class_studentas.html#af6d51bf9a3db3e7d4ae4c160792c4b93", null ],
+    [ "getPaz", "class_studentas.html#af214c4e3771d399b2dab009c2881ff9e", null ],
     [ "getRez", "class_studentas.html#a96a5c56d0b94ab196e7f1e30275e9737", null ],
     [ "getVardas", "class_studentas.html#a3ca6431a4e395c8cea0e47e71a064373", null ],
     [ "isvalytiPaz", "class_studentas.html#a715e9ca73be4fca6fce2b0e0b29e7192", null ],
@@ -21,12 +21,12 @@ var class_studentas =
     [ "setGalutinisMed", "class_studentas.html#a385f8490527ff84196aea143642ce14c", null ],
     [ "setGalutinisVid", "class_studentas.html#a8307e8380a21b088dd4f93a185bb4a54", null ],
     [ "setPavarde", "class_studentas.html#ad7ec6daa270ef2681482902dacc49b9d", null ],
-    [ "setPaz", "class_studentas.html#acdf72481968ac146bc8fee812415d657", null ],
+    [ "setPaz", "class_studentas.html#aa7f7a58687a9e445791646eb0a013022", null ],
     [ "setRez", "class_studentas.html#abb31e413f3474ee516a8a374e7b14045", null ],
     [ "setVardas", "class_studentas.html#a4e84e671ac717ae7578f34f17b2a30bb", null ],
     [ "egz", "class_studentas.html#a965aabf5e8ae3923787a2ffd54bad89a", null ],
     [ "galutinisMed", "class_studentas.html#a2356629205a7860da974d5a8308a1e0c", null ],
     [ "galutinisVid", "class_studentas.html#a46dae24756e48ec03269807db62862c5", null ],
-    [ "paz", "class_studentas.html#a283b3258f2240f11eca788eda557a20e", null ],
+    [ "paz", "class_studentas.html#a96cd75122ad2a06277cd77b0ce3e31cb", null ],
     [ "rez", "class_studentas.html#a6b72fe9e66f3787cbbd064019e78011f", null ]
 ];

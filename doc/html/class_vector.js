@@ -3,6 +3,7 @@ var class_vector =
     [ "const_iterator", "class_vector.html#ab5c7c5bd8876148f2a11fdce1c221776", null ],
     [ "iterator", "class_vector.html#ac0f3602bfd8099ecf53f9aeb3cb90528", null ],
     [ "Vector", "class_vector.html#a39d6069675db4ecfc1ab81d440da759a", null ],
+    [ "Vector", "class_vector.html#a8d4ab361a0285a27e994707c43e50b21", null ],
     [ "~Vector", "class_vector.html#afd524fac19e6d3d69db5198ffe2952b0", null ],
     [ "Vector", "class_vector.html#a940f94b7c4a1c15a65a1ab6e13859dfe", null ],
     [ "Vector", "class_vector.html#a5ed9bb7852ccee071f8418d10182927f", null ],

@@ -4,7 +4,7 @@ var searchData=
   ['setgalutinismed_1',['setGalutinisMed',['../class_studentas.html#a385f8490527ff84196aea143642ce14c',1,'Studentas']]],
   ['setgalutinisvid_2',['setGalutinisVid',['../class_studentas.html#a8307e8380a21b088dd4f93a185bb4a54',1,'Studentas']]],
   ['setpavarde_3',['setPavarde',['../class_studentas.html#ad7ec6daa270ef2681482902dacc49b9d',1,'Studentas::setPavarde()'],['../class_zmogus.html#a35536ee0387ce22c972d8101617bae28',1,'Zmogus::setPavarde()']]],
-  ['setpaz_4',['setPaz',['../class_studentas.html#acdf72481968ac146bc8fee812415d657',1,'Studentas']]],
+  ['setpaz_4',['setPaz',['../class_studentas.html#aa7f7a58687a9e445791646eb0a013022',1,'Studentas']]],
   ['setrez_5',['setRez',['../class_studentas.html#abb31e413f3474ee516a8a374e7b14045',1,'Studentas']]],
   ['setvardas_6',['setVardas',['../class_studentas.html#a4e84e671ac717ae7578f34f17b2a30bb',1,'Studentas::setVardas()'],['../class_zmogus.html#a90a75bc2bf6bc19fc4c1ebde04e00623',1,'Zmogus::setVardas()']]],
   ['shrink_5fto_5ffit_7',['shrink_to_fit',['../class_vector.html#ad6454ce193263b8000d4c18cb0c3a0c8',1,'Vector']]],

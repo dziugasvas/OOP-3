@@ -42,7 +42,7 @@ void \doxymbox{\hyperlink{class_studentas_a3d73d57245cccb84a87fff820a32f205}{pri
 \begin{DoxyCompactList}\small\item\em Spausdina studento duomenis i srauta. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_studentas_acd52ae8a7b65354e937ddee975af84ec}{read}} (std::\+istream \&in) override
 \begin{DoxyCompactList}\small\item\em Nuskaito studento duomenis is srauto. \end{DoxyCompactList}\item 
-const std::\+vector$<$ int $>$ \& \doxymbox{\hyperlink{class_studentas_af6d51bf9a3db3e7d4ae4c160792c4b93}{get\+Paz}} () const
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ int $>$ \& \doxymbox{\hyperlink{class_studentas_af214c4e3771d399b2dab009c2881ff9e}{get\+Paz}} () const
 \begin{DoxyCompactList}\small\item\em Grazina pazymiu vektoriu. \end{DoxyCompactList}\item 
 int \doxymbox{\hyperlink{class_studentas_a2f9dcb2fef2e6b3dbc1581779a90a68a}{get\+Egz}} () const
 \begin{DoxyCompactList}\small\item\em Grazina egzamino pazymi. \end{DoxyCompactList}\item 
@@ -52,7 +52,7 @@ double \doxymbox{\hyperlink{class_studentas_a50fb3dcf0be0e97934f41641b85ef9e5}{g
 \begin{DoxyCompactList}\small\item\em Grazina galutini vidurkiu. \end{DoxyCompactList}\item 
 double \doxymbox{\hyperlink{class_studentas_a77eed5a443b0e55e85ee4e895a78e71c}{get\+Galutinis\+Med}} () const
 \begin{DoxyCompactList}\small\item\em Grazina galutini mediana. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_studentas_acdf72481968ac146bc8fee812415d657}{set\+Paz}} (const std::\+vector$<$ int $>$ \&nauji\+Paz)
+void \doxymbox{\hyperlink{class_studentas_aa7f7a58687a9e445791646eb0a013022}{set\+Paz}} (const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ int $>$ \&nauji\+Paz)
 \begin{DoxyCompactList}\small\item\em Nustato pazymius. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_studentas_aec2a4cd6faec3fc6fb8f294e0b1b8672}{set\+Egz}} (int naujas\+Egz)
 \begin{DoxyCompactList}\small\item\em Nustato egzamino pazymi. \end{DoxyCompactList}\item 
@@ -80,16 +80,16 @@ virtual \doxymbox{\hyperlink{class_zmogus_a6183937c7da8254430a6c99cfa89fe69}{\te
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std::\+vector$<$ int $>$ \doxymbox{\hyperlink{class_studentas_a283b3258f2240f11eca788eda557a20e}{paz}}
-\begin{DoxyCompactList}\small\item\em Namu darbu pazymiai. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_vector}{Vector}}$<$ int $>$ \doxymbox{\hyperlink{class_studentas_a96cd75122ad2a06277cd77b0ce3e31cb}{paz}}
+\item 
 int \doxymbox{\hyperlink{class_studentas_a965aabf5e8ae3923787a2ffd54bad89a}{egz}}
-\begin{DoxyCompactList}\small\item\em Egzamino pazymys. \end{DoxyCompactList}\item 
+\item 
 double \doxymbox{\hyperlink{class_studentas_a6b72fe9e66f3787cbbd064019e78011f}{rez}}
-\begin{DoxyCompactList}\small\item\em Rezultatas. \end{DoxyCompactList}\item 
+\item 
 double \doxymbox{\hyperlink{class_studentas_a46dae24756e48ec03269807db62862c5}{galutinis\+Vid}}
-\begin{DoxyCompactList}\small\item\em Galutinis pagal vidurkis. \end{DoxyCompactList}\item 
+\item 
 double \doxymbox{\hyperlink{class_studentas_a2356629205a7860da974d5a8308a1e0c}{galutinis\+Med}}
-\begin{DoxyCompactList}\small\item\em Galutinis pagal mediana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{class_zmogus}{Zmogus}}}
 \begin{DoxyCompactItemize}
@@ -195,11 +195,11 @@ Grazina pavarde.
 
 Implements \doxymbox{\hyperlink{class_zmogus_a5ccca765659860fec609deb2f2269ab9}{Zmogus}}.
 
-\Hypertarget{class_studentas_af6d51bf9a3db3e7d4ae4c160792c4b93}\index{Studentas@{Studentas}!getPaz@{getPaz}}
+\Hypertarget{class_studentas_af214c4e3771d399b2dab009c2881ff9e}\index{Studentas@{Studentas}!getPaz@{getPaz}}
 \index{getPaz@{getPaz}!Studentas@{Studentas}}
 \doxysubsubsection{\texorpdfstring{getPaz()}{getPaz()}}
-{\footnotesize\ttfamily \label{class_studentas_af6d51bf9a3db3e7d4ae4c160792c4b93} 
-const std::\+vector$<$ int $>$ \& Studentas::\+get\+Paz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \label{class_studentas_af214c4e3771d399b2dab009c2881ff9e} 
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ int $>$ \& Studentas::\+get\+Paz (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -341,11 +341,11 @@ Nustato pavarde.
 
 Implements \doxymbox{\hyperlink{class_zmogus_a35536ee0387ce22c972d8101617bae28}{Zmogus}}.
 
-\Hypertarget{class_studentas_acdf72481968ac146bc8fee812415d657}\index{Studentas@{Studentas}!setPaz@{setPaz}}
+\Hypertarget{class_studentas_aa7f7a58687a9e445791646eb0a013022}\index{Studentas@{Studentas}!setPaz@{setPaz}}
 \index{setPaz@{setPaz}!Studentas@{Studentas}}
 \doxysubsubsection{\texorpdfstring{setPaz()}{setPaz()}}
-{\footnotesize\ttfamily \label{class_studentas_acdf72481968ac146bc8fee812415d657} 
-void Studentas::\+set\+Paz (\begin{DoxyParamCaption}\item[{const std::\+vector$<$ int $>$ \&}]{nauji\+Paz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \label{class_studentas_aa7f7a58687a9e445791646eb0a013022} 
+void Studentas::\+set\+Paz (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ int $>$ \&}]{nauji\+Paz}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -386,19 +386,11 @@ Implements \doxymbox{\hyperlink{class_zmogus_a90a75bc2bf6bc19fc4c1ebde04e00623}{
 {\footnotesize\ttfamily \label{class_studentas_a965aabf5e8ae3923787a2ffd54bad89a} 
 int Studentas::\+egz\hspace{0.3cm}{\ttfamily [private]}}
 
-
-
-Egzamino pazymys. 
-
 \Hypertarget{class_studentas_a2356629205a7860da974d5a8308a1e0c}\index{Studentas@{Studentas}!galutinisMed@{galutinisMed}}
 \index{galutinisMed@{galutinisMed}!Studentas@{Studentas}}
 \doxysubsubsection{\texorpdfstring{galutinisMed}{galutinisMed}}
 {\footnotesize\ttfamily \label{class_studentas_a2356629205a7860da974d5a8308a1e0c} 
 double Studentas::\+galutinis\+Med\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Galutinis pagal mediana. 
 
 \Hypertarget{class_studentas_a46dae24756e48ec03269807db62862c5}\index{Studentas@{Studentas}!galutinisVid@{galutinisVid}}
 \index{galutinisVid@{galutinisVid}!Studentas@{Studentas}}
@@ -406,29 +398,17 @@ Galutinis pagal mediana.
 {\footnotesize\ttfamily \label{class_studentas_a46dae24756e48ec03269807db62862c5} 
 double Studentas::\+galutinis\+Vid\hspace{0.3cm}{\ttfamily [private]}}
 
-
-
-Galutinis pagal vidurkis. 
-
-\Hypertarget{class_studentas_a283b3258f2240f11eca788eda557a20e}\index{Studentas@{Studentas}!paz@{paz}}
+\Hypertarget{class_studentas_a96cd75122ad2a06277cd77b0ce3e31cb}\index{Studentas@{Studentas}!paz@{paz}}
 \index{paz@{paz}!Studentas@{Studentas}}
 \doxysubsubsection{\texorpdfstring{paz}{paz}}
-{\footnotesize\ttfamily \label{class_studentas_a283b3258f2240f11eca788eda557a20e} 
-std::\+vector$<$int$>$ Studentas::\+paz\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Namu darbu pazymiai. 
+{\footnotesize\ttfamily \label{class_studentas_a96cd75122ad2a06277cd77b0ce3e31cb} 
+\doxymbox{\hyperlink{class_vector}{Vector}}$<$int$>$ Studentas::\+paz\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_studentas_a6b72fe9e66f3787cbbd064019e78011f}\index{Studentas@{Studentas}!rez@{rez}}
 \index{rez@{rez}!Studentas@{Studentas}}
 \doxysubsubsection{\texorpdfstring{rez}{rez}}
 {\footnotesize\ttfamily \label{class_studentas_a6b72fe9e66f3787cbbd064019e78011f} 
 double Studentas::\+rez\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Rezultatas. 
 
 
 
