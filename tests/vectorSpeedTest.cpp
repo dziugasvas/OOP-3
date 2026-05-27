@@ -61,8 +61,6 @@ int main() {
 
     std::cout << "std::vector perskirstymai: " << perskirsymai_std << std::endl;
     std::cout << "Vector perskirstymai: " << perskirsymai_vec << std::endl;
-    std::cout << "Kontroline suma: " << kontrolinis << std::endl;
-
 
     return 0;
 }
